@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #faf2a1;
+}
+.estimator-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em auto;
+  gap: 2em;
+  background-color: #faf2a1;
+  &__title {
+    .title {
+      text-transform: uppercase;
+      font-size: 2em;
+      color: #453f78;
+    }
+  }
+  .estimator {
+    border: 2px solid black;
+    padding: 1em;
+    .estimator-column {
+      border: 1px solid;
+    }
+    .estimator-header {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      color: #3f2e56;
+      margin: 0 0 1.5em 0;
+      &__service-name {
+        text-align: right;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+    }
+  }
+  .estimator-content {
+    .estimator-content-row {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin: 1rem auto;
+      &__no-of-units {
+        min-width: 100px;
+        float: left;
+      }
+      &__service-name,
+      &__charges-in-inr,
+      &__charges-in-usd,
+      &__total-in-inr,
+      &__total-in-usd {
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+    }
+  }
+}

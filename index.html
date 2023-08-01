@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Cost Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="estimator-wrapper">
+        <div class="estimator-wrapper__title">
+          <h1 class="title">Cost Estimator</h1>
+        </div>
+
+        <div class="estimator">
+          <div class="estimator-header">
+            <p class="estimator-header__service-name">Service Name</p>
+            <p class="estimator-header__service-name">Charges in ₹</p>
+            <p class="estimator-header__service-name">Charges in $</p>
+            <p class="estimator-header__service-name">No of Units</p>
+            <p class="estimator-header__service-name">Total Charges in ₹</p>
+            <p class="estimator-header__service-name">Total Charges in $</p>
+          </div>
+          <div class="estimator-content">
+            <div class="estimator-content-row">
+              <p class="estimator-content-row__service-name">Domain Charges</p>
+              <span class="estimator-content-row__charges-in-inr">₹999</span>
+              <span class="estimator-content-row__charges-in-usd">$12.9</span>
+              <input
+                class="estimator-content-row__no-of-units"
+                type="number"
+                min="1"
+                max="99"
+              />
+              <span class="estimator-content-row__total-in-inr">₹999</span>
+              <span class="estimator-content-row__total-in-usd">$12.9</span>
+            </div>
+            <div class="estimator-content-row">
+              <p class="estimator-content-row__service-name">Hosting Charges</p>
+              <span class="estimator-content-row__charges-in-inr">₹4999</span>
+              <span class="estimator-content-row__charges-in-usd">$49.99</span>
+              <input
+                class="estimator-content-row__no-of-units"
+                type="number"
+                min="1"
+                max="99"
+              />
+              <span class="estimator-content-row__total-in-inr">₹4999</span>
+              <span class="estimator-content-row__total-in-usd">$49.99</span>
+            </div>
+            <div class="estimator-content-row">
+              <p class="estimator-content-row__service-name">SSL Charges</p>
+              <span class="estimator-content-row__charges-in-inr">₹1999</span>
+              <span class="estimator-content-row__charges-in-usd">$19.9</span>
+              <input
+                class="estimator-content-row__no-of-units"
+                type="number"
+                min="1"
+                max="99"
+              />
+              <span class="estimator-content-row__total-in-inr">₹1999</span>
+              <span class="estimator-content-row__total-in-usd">$19.9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
