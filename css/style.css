@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #faf2a1;
 }
 
@@ -50,7 +50,11 @@
   min-width: 100px;
   float: left;
 }
-.estimator-wrapper .estimator-content .estimator-content-row__service-name, .estimator-wrapper .estimator-content .estimator-content-row__charges-in-inr, .estimator-wrapper .estimator-content .estimator-content-row__charges-in-usd, .estimator-wrapper .estimator-content .estimator-content-row__total-in-inr, .estimator-wrapper .estimator-content .estimator-content-row__total-in-usd {
+.estimator-wrapper .estimator-content .estimator-content-row__service-name,
+.estimator-wrapper .estimator-content .estimator-content-row__charges-in-inr,
+.estimator-wrapper .estimator-content .estimator-content-row__charges-in-usd,
+.estimator-wrapper .estimator-content .estimator-content-row__total-in-inr,
+.estimator-wrapper .estimator-content .estimator-content-row__total-in-usd {
   font-size: 1.2em;
   font-weight: 700;
 }

@@ -1,70 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Development Cost Calculator</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <section>
-      <div class="estimator-wrapper">
-        <div class="estimator-wrapper__title">
-          <h1 class="title">Cost Estimator</h1>
-        </div>
+<html>
+<head>
+  <title>Service List</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Service List</h1>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Charge (USD)</th>
+        <th>Charge (INR)</th>
+        <th>Units</th>
+        <th>Cost (INR)</th>
+        <th>Cost (USD)</th>
+      </tr>
+      <tr>
+        <td>Domain Charges</td>
+        <td>999</td>
+        <td>999</td>
+        <td><input type="number" class="units" value="0"></td>
+        <td class="cost-inr">0</td>
+        <td class="cost-usd">0</td>
+      </tr>
+      <tr>
+        <td>SSL Charges</td>
+        <td>1222</td>
+        <td>1222</td>
+        <td><input type="number" class="units" value="0"></td>
+        <td class="cost-inr">0</td>
+        <td class="cost-usd">0</td>
+      </tr>
+      <tr>
+        <td>Hosting Charges</td>
+        <td>999</td>
+        <td>999</td>
+        <td><input type="number" class="units" value="0"></td>
+        <td class="cost-inr">0</td>
+        <td class="cost-usd">0</td>
+      </tr>
+      <tr>
+        <td>Maintenance Charges</td>
+        <td>656</td>
+        <td>656</td>
+        <td><input type="number" class="units" value="0"></td>
+        <td class="cost-inr">0</td>
+        <td class="cost-usd">0</td>
+      </tr>
+      <tr>
+        <td>Extra Work</td>
+        <td>876</td>
+        <td>876</td>
+        <td><input type="number" class="units" value="0"></td>
+        <td class="cost-inr">0</td>
+        <td class="cost-usd">0</td>
+      </tr>
+      <tr>
+        <td>Theme Charges</td>
+        <td>454</td>
+        <td>454</td>
+        <td><input type="number" class="units" value="0"></td>
+        <td class="cost-inr">0</td>
+        <td class="cost-usd">0</td>
+      </tr>
+      <tr>
+        <td>Development Charges</td>
+        <td>
+          <select class="development-select">
+            <option value="10000">Static</option>
+            <option value="12222">CMS</option>
+            <option value="88888">Custom</option>
+          </select>
+        </td>
+        <td>0</td>
+        <td><input type="number" class="units" value="0"></td>
+        <td class="cost-inr">0</td>
+        <td class="cost-usd">0</td>
+      </tr>
+    </table>
 
-        <div class="estimator">
-          <div class="estimator-header">
-            <p class="estimator-header__service-name">Service Name</p>
-            <p class="estimator-header__service-name">Charges in ₹</p>
-            <p class="estimator-header__service-name">Charges in $</p>
-            <p class="estimator-header__service-name">No of Units</p>
-            <p class="estimator-header__service-name">Total Charges in ₹</p>
-            <p class="estimator-header__service-name">Total Charges in $</p>
-          </div>
-          <div class="estimator-content">
-            <div class="estimator-content-row">
-              <p class="estimator-content-row__service-name">Domain Charges</p>
-              <span class="estimator-content-row__charges-in-inr">₹999</span>
-              <span class="estimator-content-row__charges-in-usd">$12.9</span>
-              <input
-                class="estimator-content-row__no-of-units"
-                type="number"
-                min="1"
-                max="99"
-              />
-              <span class="estimator-content-row__total-in-inr">₹999</span>
-              <span class="estimator-content-row__total-in-usd">$12.9</span>
-            </div>
-            <div class="estimator-content-row">
-              <p class="estimator-content-row__service-name">Hosting Charges</p>
-              <span class="estimator-content-row__charges-in-inr">₹4999</span>
-              <span class="estimator-content-row__charges-in-usd">$49.99</span>
-              <input
-                class="estimator-content-row__no-of-units"
-                type="number"
-                min="1"
-                max="99"
-              />
-              <span class="estimator-content-row__total-in-inr">₹4999</span>
-              <span class="estimator-content-row__total-in-usd">$49.99</span>
-            </div>
-            <div class="estimator-content-row">
-              <p class="estimator-content-row__service-name">SSL Charges</p>
-              <span class="estimator-content-row__charges-in-inr">₹1999</span>
-              <span class="estimator-content-row__charges-in-usd">$19.9</span>
-              <input
-                class="estimator-content-row__no-of-units"
-                type="number"
-                min="1"
-                max="99"
-              />
-              <span class="estimator-content-row__total-in-inr">₹1999</span>
-              <span class="estimator-content-row__total-in-usd">$19.9</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+    <div class="totals">
+      <h2>Total Charges</h2>
+      <p>Total INR: <span id="total-inr">0</span></p>
+      <p>Total USD: <span id="total-usd">0</span></p>
+    </div>
+
+    <div class="buttons">
+      <button id="mail-button">Mail Quote</button>
+      <button id="whatsapp-button">Send via WhatsApp</button>
+      <button id="pdf-button">Generate PDF</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
