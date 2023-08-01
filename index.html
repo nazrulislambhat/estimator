@@ -1,97 +1,113 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Service List</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Service List</h1>
-    <table>
-      <tr>
-        <th>Service</th>
-        <th>Charge (USD)</th>
-        <th>Charge (INR)</th>
-        <th>Units</th>
-        <th>Cost (INR)</th>
-        <th>Cost (USD)</th>
-      </tr>
-      <tr>
-        <td>Domain Charges</td>
-        <td>999</td>
-        <td>999</td>
-        <td><input type="number" class="units" value="0"></td>
-        <td class="cost-inr">0</td>
-        <td class="cost-usd">0</td>
-      </tr>
-      <tr>
-        <td>SSL Charges</td>
-        <td>1222</td>
-        <td>1222</td>
-        <td><input type="number" class="units" value="0"></td>
-        <td class="cost-inr">0</td>
-        <td class="cost-usd">0</td>
-      </tr>
-      <tr>
-        <td>Hosting Charges</td>
-        <td>999</td>
-        <td>999</td>
-        <td><input type="number" class="units" value="0"></td>
-        <td class="cost-inr">0</td>
-        <td class="cost-usd">0</td>
-      </tr>
-      <tr>
-        <td>Maintenance Charges</td>
-        <td>656</td>
-        <td>656</td>
-        <td><input type="number" class="units" value="0"></td>
-        <td class="cost-inr">0</td>
-        <td class="cost-usd">0</td>
-      </tr>
-      <tr>
-        <td>Extra Work</td>
-        <td>876</td>
-        <td>876</td>
-        <td><input type="number" class="units" value="0"></td>
-        <td class="cost-inr">0</td>
-        <td class="cost-usd">0</td>
-      </tr>
-      <tr>
-        <td>Theme Charges</td>
-        <td>454</td>
-        <td>454</td>
-        <td><input type="number" class="units" value="0"></td>
-        <td class="cost-inr">0</td>
-        <td class="cost-usd">0</td>
-      </tr>
-      <tr>
-        <td>Development Charges</td>
-        <td>
-          <select class="development-select">
-            <option value="10000">Static</option>
-            <option value="12222">CMS</option>
-            <option value="88888">Custom</option>
-          </select>
-        </td>
-        <td>0</td>
-        <td><input type="number" class="units" value="0"></td>
-        <td class="cost-inr">0</td>
-        <td class="cost-usd">0</td>
-      </tr>
-    </table>
+  <head>
+    <title>Service List</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Web Development Cost Calculator</h1>
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Charge (₹)</th>
+          <th>Charge ($)</th>
+          <th>Units</th>
+          <th>Cost (₹)</th>
+          <th>Cost ($)</th>
+        </tr>
+        <tr>
+          <td class="service-name">Domain Charges</td>
+          <td>1000</td>
+          <td>13</td>
+          <td><input type="number" class="units" value="0" /></td>
+          <td class="cost-inr">0</td>
+          <td class="cost-usd">0</td>
+        </tr>
+        <tr>
+          <td class="service-name">SSL Charges</td>
+          <td>1500</td>
+          <td>25</td>
+          <td><input type="number" class="units" value="0" /></td>
+          <td class="cost-inr">0</td>
+          <td class="cost-usd">0</td>
+        </tr>
+        <tr>
+          <td class="service-name">
+            Hosting Charges
+            <select class="hosting-select">
+              <option value="4000">Basic Hosting</option>
+              <option value="6000">HDD Multi Domain</option>
+              <option value="10000">SSD Hosting</option>
+              <option value="15000">Cloud Hosting</option>
+            </select>
+          </td>
+          <td class="hosting-charge-inr">0</td>
+          <td class="hosting-charge-usd">0</td>
+          <td><input type="number" class="units" value="0" /></td>
+          <td class="cost-inr">0</td>
+          <td class="cost-usd">0</td>
+        </tr>
+        <tr>
+          <td class="service-name">Maintenance Charges (yearly)</td>
+          <td>12000</td>
+          <td>500</td>
+          <td><input type="number" class="units" value="0" /></td>
+          <td class="cost-inr">0</td>
+          <td class="cost-usd">0</td>
+        </tr>
+        <tr>
+          <td class="service-name">Hourly Charges</td>
+          <td>300</td>
+          <td>50</td>
+          <td><input type="number" class="units" value="0" /></td>
+          <td class="cost-inr">0</td>
+          <td class="cost-usd">0</td>
+        </tr>
+        <tr>
+          <td class="service-name">Theme Charges</td>
+          <td>5000</td>
+          <td>100</td>
+          <td><input type="number" class="units" value="0" /></td>
+          <td class="cost-inr">0</td>
+          <td class="cost-usd">0</td>
+        </tr>
+        <tr>
+          <td class="service-name">
+            Development Charges
+            <select class="development-select">
+              <option value="10000">Static</option>
+              <option value="20000">Dynamic</option>
+              <option value="30000">E-Commerce</option>
+              <option value="40000">Custom</option>
+            </select>
+          </td>
+          <td class="development-charge-inr">0</td>
+          <td class="development-charge-usd">0</td>
+          <td><input type="number" class="units" value="0" /></td>
+          <td class="cost-inr">0</td>
+          <td class="cost-usd">0</td>
+        </tr>
+      </table>
 
-    <div class="totals">
-      <h2>Total Charges</h2>
-      <p>Total INR: <span id="total-inr">0</span></p>
-      <p>Total USD: <span id="total-usd">0</span></p>
-    </div>
+      <div class="totals">
+        <h2>Total Charges</h2>
+        <p>Total ₹: <span id="total-inr">0</span></p>
+        <span class="or">OR</span>
+        <p>Total $: <span id="total-usd">0</span></p>
+      </div>
 
-    <div class="buttons">
-      <button id="mail-button">Mail Quote</button>
-      <button id="whatsapp-button">Send via WhatsApp</button>
-      <button id="pdf-button">Generate PDF</button>
+      <div class="buttons">
+        <button id="mail-button">Mail Quote</button>
+        <button id="whatsapp-button">Send via WhatsApp</button>
+
+        <button id="pdf-button">Generate PDF</button>
+      </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    ></script>
+  </body>
 </html>
